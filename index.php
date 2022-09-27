@@ -6,52 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-</head>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    </head>
 <body>
     <div class="container">
-        <div class="row">
-            <div class="col-xxl-12">Banner</div>
-        </div>
-        <div class="row">
-            <div class="col-xxl-12">
-                <nav class="navbar navbar-expand-lg bg-light">
-                    <div class="container-fluid">
-                      <a class="navbar-brand" href="#">Navbar</a>
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                          <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                          </li>
-                          <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Dropdown
-                            </a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Action</a></li>
-                              <li><a class="dropdown-item" href="#">Another action</a></li>
-                              <li><hr class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link disabled">Disabled</a>
-                          </li>
-                        </ul>
-                        <form class="d-flex" role="search">
-                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                          <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
-                      </div>
-                    </div>
-                  </nav>
-            </div>
-        </div>
+    <?php include('inc_header.php');?>
         <div class="row">
             <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12">Slider</div>
             <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12">
@@ -91,20 +50,77 @@
         </div>
         <div class="row">
             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12">Column1</div>
-            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12">Column1</div>           
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12">
+              <div id="accordion">
+                <h3>Section 1</h3>
+                <div>
+                  <p>
+                  Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                  ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                  amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                  odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+                  </p>
+                </div>
+                <h3>Section 2</h3>
+                <div>
+                  <p>
+                  Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+                  purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+                  velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+                  suscipit faucibus urna.
+                  </p>
+                </div>
+                <h3>Section 3</h3>
+                <div>
+                  <p>
+                  Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+                  Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+                  ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+                  lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+                  </p>
+                  <ul>
+                    <li>List item one</li>
+                    <li>List item two</li>
+                    <li>List item three</li>
+                  </ul>
+                </div>
+                <h3>Section 4</h3>
+                <div>
+                  <p>
+                  Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+                  et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+                  faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+                  mauris vel est.
+                  </p>
+                  <p>
+                  Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+                  Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                  inceptos himenaeos.
+                  </p>
+                </div>
+              </div>
+               
+
+            </div>           
         </div>
         <div class="row">
             <div class="col-xxl-12">Google Map</div>         
         </div>
-        <div class="row">
-            <div class="col-xxl-12">&copy;2022, mysite.com, All right reserved.</div>         
-        </div>
+        <?php include('inc_footer.php');?>
         
 
 
     </div><!-- container-->
 
     <script src="js/bootstrap.bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#accordion" ).accordion();
+  } );
+  </script>
     
 </body>
 </html>
